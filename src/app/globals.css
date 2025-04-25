@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #111204;
+  --foreground: #171717;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111204;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-outfit), Arial, Helvetica, sans-serif;
+}
+
+main {
+  background: radial-gradient(circle at center, #28500026 0%, #111204 100%);
+}
+
+/* Dodatkowe style dla navbar */
+nav {
+  background-color: #111204;
+  /* Czarny kolor tła */
+  padding: 1rem 0;
+  /* Zwiększ odstępy wewnętrzne */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  /* Kolor tekstu */
+  padding: 0.5rem 1rem;
+  /* Dodaj padding do linków */
+}
+
+nav button {
+  background-color: #00ff00;
+  /* Zielony kolor przycisku */
+  color: black;
+  /* Kolor tekstu przycisku */
+  padding: 0.5rem 1rem;
+  /* Dodaj padding do przycisku */
+}
+
+/* Dodaj na końcu pliku */
+.rc-slider-track {
+  background-color: #a3fc3b !important;
+}
+
+.rc-slider-handle {
+  border-color: #a3fc3b !important;
+  background-color: #a3fc3b !important;
+}
+
+.rc-slider-rail {
+  background-color: #2c3718 !important;
+}
+
+@keyframes progressBar {
+  0% { width: 100%; }
+  100% { width: 0%; }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-progressBar {
+  animation: progressBar 3600s linear;
+}
+
+.animate-slideIn {
+  animation: slideIn 0.5s ease-out forwards;
+}

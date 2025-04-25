@@ -1,0 +1,12 @@
+{
+  "Instagram": {
+    "id": "instagram",
+    "name": "Instagram",
+    "services": {}
+  },
+  "TikTok": {
+    "id": "tiktok",
+    "name": "TikTok",
+    "services": {}
+  }
+}
