@@ -13,25 +13,23 @@ export const platformsConfig = {
         "maxQuantity": 10000,
         "japServiceId": "9396", // ID usługi na JustAnotherPanel
         "priceRanges": [
-          { "min": 10, "max": 10, "pricePerUnit": 3.49 },
-          { "min": 25, "max": 25, "pricePerUnit": 4.99 },
-          { "min": 50, "max": 50, "pricePerUnit": 5.99 },
-          { "min": 100, "max": 100, "pricePerUnit": 7.99 },
-          { "min": 250, "max": 250, "pricePerUnit": 9.99 },
-          { "min": 350, "max": 350, "pricePerUnit": 11.99 },
-          { "min": 500, "max": 500, "pricePerUnit": 15.90 },
-          { "min": 750, "max": 750, "pricePerUnit": 17.99 },
-          { "min": 1000, "max": 1000, "pricePerUnit": 19.99 },
-          { "min": 1500, "max": 1500, "pricePerUnit": 21.99 },
-          { "min": 1800, "max": 1800, "pricePerUnit": 24.99 },
-          { "min": 2000, "max": 2000, "pricePerUnit": 28.99 },
-          { "min": 2500, "max": 2500, "pricePerUnit": 32.99 },
-          { "min": 3500, "max": 3500, "pricePerUnit": 39.99 },
-          { "min": 3800, "max": 3800, "pricePerUnit": 42.99 },
-          { "min": 5000, "max": 5000, "pricePerUnit": 49.99 },
-          { "min": 7500, "max": 7500, "pricePerUnit": 59.99 },
-          { "min": 8700, "max": 8700, "pricePerUnit": 65.99 },
-          { "min": 10000, "max": 10000, "pricePerUnit": 99.99 }
+          { "min": 50, "max": 50, "pricePerUnit": 0.50 },
+          { "min": 100, "max": 100, "pricePerUnit": 0.80 },
+          { "min": 250, "max": 250, "pricePerUnit": 1.90 },
+          { "min": 350, "max": 350, "pricePerUnit": 2.65 },
+          { "min": 500, "max": 500, "pricePerUnit": 3.85 },
+          { "min": 750, "max": 750, "pricePerUnit": 4.95 },
+          { "min": 1000, "max": 1000, "pricePerUnit": 7.35 },
+          { "min": 1500, "max": 1500, "pricePerUnit": 9.99 },
+          { "min": 1800, "max": 1800, "pricePerUnit": 11.99 },
+          { "min": 2000, "max": 2000, "pricePerUnit": 14.99 }, // HOT
+          { "min": 2500, "max": 2500, "pricePerUnit": 16.99 },
+          { "min": 3500, "max": 3500, "pricePerUnit": 24.99 },
+          { "min": 3800, "max": 3800, "pricePerUnit": 27.79 },
+          { "min": 5000, "max": 5000, "pricePerUnit": 33.99 },
+          { "min": 7500, "max": 7500, "pricePerUnit": 46.99 },
+          { "min": 8700, "max": 8700, "pricePerUnit": 55.99 },
+          { "min": 10000, "max": 10000, "pricePerUnit": 59.99 }
         ],
         "extraOptions": {
           "premiumGuarantee": {
@@ -48,23 +46,19 @@ export const platformsConfig = {
         "maxQuantity": 10000,
         "japServiceId": "9583", // ID usługi na JustAnotherPanel
         "priceRanges": [
-          { "min": 10, "max": 10, "pricePerUnit": 3.99 },
-          { "min": 25, "max": 25, "pricePerUnit": 5.99 },
-          { "min": 50, "max": 50, "pricePerUnit": 7.99 },
-          { "min": 100, "max": 100, "pricePerUnit": 9.99 },
-          { "min": 250, "max": 250, "pricePerUnit": 11.99 },
-          { "min": 350, "max": 350, "pricePerUnit": 16.99 },
-          { "min": 500, "max": 500, "pricePerUnit": 19.99 },
-          { "min": 750, "max": 750, "pricePerUnit": 21.99 },
-          { "min": 850, "max": 850, "pricePerUnit": 24.99 },
-          { "min": 1000, "max": 1000, "pricePerUnit": 29.99 },
-          { "min": 1500, "max": 1500, "pricePerUnit": 34.99 },
-          { "min": 2500, "max": 2500, "pricePerUnit": 49.99 },
-          { "min": 3800, "max": 3800, "pricePerUnit": 59.99 },
-          { "min": 5000, "max": 5000, "pricePerUnit": 65.99 },
-          { "min": 7500, "max": 7500, "pricePerUnit": 79.99 },
-          { "min": 8500, "max": 8500, "pricePerUnit": 99.99 },
-          { "min": 10000, "max": 10000, "pricePerUnit": 129.99 }
+          { "min": 50, "max": 50, "pricePerUnit": 0.55 },
+          { "min": 100, "max": 100, "pricePerUnit": 1.25 },
+          { "min": 250, "max": 250, "pricePerUnit": 3.00 },
+          { "min": 350, "max": 350, "pricePerUnit": 4.20 },
+          { "min": 500, "max": 500, "pricePerUnit": 5.99 },
+          { "min": 750, "max": 750, "pricePerUnit": 7.99 },
+          { "min": 1000, "max": 1000, "pricePerUnit": 11.99 },
+          { "min": 1500, "max": 1500, "pricePerUnit": 16.99 },
+          { "min": 2500, "max": 2500, "pricePerUnit": 25.99 }, // HOT
+          { "min": 3800, "max": 3800, "pricePerUnit": 39.99 },
+          { "min": 5000, "max": 5000, "pricePerUnit": 52.99 }, // HOT
+          { "min": 7500, "max": 7500, "pricePerUnit": 69.99 },
+          { "min": 10000, "max": 10000, "pricePerUnit": 89.99 }
         ],
         "extraOptions": {
           "premiumGuarantee": {
@@ -81,20 +75,17 @@ export const platformsConfig = {
         "maxQuantity": 10000,
         "japServiceId": "6207", // ID usługi na JustAnotherPanel
         "priceRanges": [
-          { min: 100, max: 100, pricePerUnit: 3.49 },
-          { min: 250, max: 250, pricePerUnit: 3.99 },
-          { min: 500, max: 500, pricePerUnit: 5.99 },
-          { min: 750, max: 750, pricePerUnit: 7.99 },
-          { min: 1000, max: 1000, pricePerUnit: 9.99 },
-          { min: 2500, max: 2500, pricePerUnit: 12.99 },
-          { min: 3500, max: 3500, pricePerUnit: 15.99 },
-          { min: 4800, max: 4800, pricePerUnit: 19.99 },
-          { min: 5000, max: 5000, pricePerUnit: 21.99 },
-          { min: 7500, max: 7500, pricePerUnit: 36.99 },
-          { min: 8800, max: 8800, pricePerUnit: 45.99 },
-          { min: 10000, max: 10000, pricePerUnit: 59.99 },
-          { min: 15000, max: 15000, pricePerUnit: 69.99 },
-          { min: 25000, max: 25000, pricePerUnit: 99.99 }
+          { min: 500, max: 500, pricePerUnit: 1.00 },
+          { min: 750, max: 750, pricePerUnit: 1.99 }, 
+          { min: 1000, max: 1000, pricePerUnit: 2.49 },
+          { min: 2500, max: 2500, pricePerUnit: 2.89 }, // SUPER HOT
+          { min: 3500, max: 3500, pricePerUnit: 3.49 },
+          { min: 4800, max: 4800, pricePerUnit: 3.99 },
+          { min: 5000, max: 5000, pricePerUnit: 4.49 },
+          { min: 7500, max: 7500, pricePerUnit: 5.49 },
+          { min: 10000, max: 10000, pricePerUnit: 6.99 },
+          { min: 15000, max: 15000, pricePerUnit: 8.99 },
+          { min: 25000, max: 25000, pricePerUnit: 9.99 } // HOT
         ],
         "extraOptions": {
           "premiumGuarantee": {
@@ -117,9 +108,8 @@ export const platformsConfig = {
         "maxQuantity": 10000,
         "japServiceId": "7563", // ID usługi na JustAnotherPanel
         "priceRanges": [
-          { min: 10, max: 10, pricePerUnit: 3.49 },
-          { min: 25, max: 25, pricePerUnit: 3.99 },
-          { min: 50, max: 50, pricePerUnit: 5.99 },
+          { min: 25, max: 25, pricePerUnit: 0.50 },
+          { min: 50, max: 50, pricePerUnit: 0.85 }, // SUPER HOT
           { min: 100, max: 100, pricePerUnit: 6.99 },
           { min: 250, max: 250, pricePerUnit: 8.99 },
           { min: 350, max: 350, pricePerUnit: 11.99 },
