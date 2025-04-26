@@ -18,7 +18,7 @@ const LegalsPage = () => {
                 : 'bg-[#2c3718] text-white hover:bg-[#3a4822]'
             }`}
           >
-            Regulamin
+            Terms of Service
           </button>
           <button
             onClick={() => setActiveTab('privacy')}
@@ -28,7 +28,7 @@ const LegalsPage = () => {
                 : 'bg-[#2c3718] text-white hover:bg-[#3a4822]'
             }`}
           >
-            Polityka Prywatności
+            Privacy Policy
           </button>
           <button
             onClick={() => setActiveTab('preorder')}
@@ -38,7 +38,7 @@ const LegalsPage = () => {
                 : 'bg-[#2c3718] text-white hover:bg-[#3a4822]'
             }`}
           >
-            Informacje przed zakupem
+           Promotion Guidelines
           </button>
         </div>
 
@@ -46,7 +46,7 @@ const LegalsPage = () => {
         <div className="bg-[#1A1A1A]/40 backdrop-blur-sm rounded-[20px] p-8 border border-[#ffffff]/[0.08]">
           {activeTab === 'terms' ? (
             <div>
-              <h1 className="text-3xl font-bold text-white mb-8 text-center">REGULAMIN SERWISU PRIMES.CC</h1>
+              <h1 className="text-3xl font-bold text-white mb-8 text-center">TERMS OF SERVICE PRIMES.CC</h1>
               <div className="text-gray-300 space-y-4">
                 <p>
                 1. Postanowienia ogólne <br />
@@ -95,6 +95,7 @@ const LegalsPage = () => {
 7.1. Serwis może wprowadzać zmiany w regulaminie. Korzystanie z usług po zmianach oznacza ich akceptację.
 7.2. W sprawach nieuregulowanych niniejszym regulaminem obowiązują przepisy prawa.
                 </p>
+                <p>Terms of Service written in Polish!</p>
               </div>
             </div>
           ) : activeTab === 'privacy' ? (
@@ -158,6 +159,7 @@ wniesienia skargi do organu nadzorczego (jeśli uzna, że dane są przetwarzane 
 
 
                 </p>
+                <p>Privacy Policy written in Polish!</p>
               </div>
             </div>
           ) : (
@@ -195,6 +197,7 @@ Użytkownik ponosi pełną odpowiedzialność za poprawność wpisanego linku.
 Primes nie odpowiada za brak realizacji usługi w przypadku nieprawidłowo wprowadzonego adresu.
 Prosimy o dokładne sprawdzenie linku przed złożeniem zamówienia.
                 </p>
+                <p>Promotion Guidelines written in Polish!</p>
               </div>
             </div>
           )}
@@ -206,7 +209,7 @@ Prosimy o dokładne sprawdzenie linku przed złożeniem zamówienia.
             href="/"
             className="inline-block bg-[#2c3718] hover:bg-[#3a4822] text-white px-6 py-3 rounded-lg transition-all"
           >
-            ← Wróć do strony głównej
+            ← Go back to the home page
           </Link>
         </div>
       </div>
