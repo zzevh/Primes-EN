@@ -82,10 +82,31 @@ nav button {
   }
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .animate-progressBar {
   animation: progressBar 3600s linear;
 }
 
 .animate-slideIn {
   animation: slideIn 0.5s ease-out forwards;
+}
+
+.animate-scroll {
+  animation: scroll 55s linear infinite;
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  will-change: transform;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
 }

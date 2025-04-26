@@ -26,6 +26,7 @@ import 'rc-slider/assets/index.css';
 import { faMoneyCheck } from '@fortawesome/free-solid-svg-icons/faMoneyCheck';
 import { faDollar } from '@fortawesome/free-solid-svg-icons/faDollar';
 import { PlatformKey, ServiceDetails } from '@/types';
+import { HotOffers } from './HotOffers';
 
 // Definiujemy typ dla usług
 type ServiceKey<P extends PlatformKey> = keyof typeof platformsConfig[P]['services'];
@@ -814,111 +815,114 @@ const Offers = () => {
   };
 
   return (
-    <section className="relative min-h-screen bg-[#111511] pt-32 pb-20">
-      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        <div className="absolute top-20 right-[15%] hidden md:block">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="rgba(185, 253, 80, 0.15)">
-            <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
-          </svg>
+    <div className="min-h-screen bg-black">
+      <section className="relative min-h-screen bg-[#111511] pt-32 pb-20">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+          <div className="absolute top-20 right-[15%] hidden md:block">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="rgba(185, 253, 80, 0.15)">
+              <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
+            </svg>
+          </div>
+
+          <div className="absolute bottom-40 left-[10%] hidden md:block">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="rgba(185, 253, 80, 0.1)">
+              <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
+            </svg>
+          </div>
+
+          <div className="absolute top-1/3 left-[30%] hidden md:block">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="rgba(185, 253, 80, 0.2)">
+              <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
+            </svg>
+          </div>
+
+          <div className="absolute bottom-1/4 right-[20%] hidden md:block">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="rgba(185, 253, 80, 0.15)">
+              <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
+            </svg>
+          </div>
         </div>
 
-        <div className="absolute bottom-40 left-[10%] hidden md:block">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="rgba(185, 253, 80, 0.1)">
-            <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
-          </svg>
-        </div>
-
-        <div className="absolute top-1/3 left-[30%] hidden md:block">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="rgba(185, 253, 80, 0.2)">
-            <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
-          </svg>
-        </div>
-
-        <div className="absolute bottom-1/4 right-[20%] hidden md:block">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="rgba(185, 253, 80, 0.15)">
-            <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
-          </svg>
-        </div>
-      </div>
-
-      <div className="relative z-10 max-w-[1200px] mx-auto px-4">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            {!selectedPlatform ? (
-              "Choose your platform"
-            ) : !selectedService ? (
-              <>Selected: <span className="text-[#a3fc3b]">{selectedPlatform}</span></>
-            ) : (
-              <>Selected: <span className="text-[#a3fc3b]">{selectedPlatform} / {selectedService}</span></>
-            )}
-          </h1>
-          <p className="text-gray-300 text-lg max-w-[600px] mx-auto">
-            {!selectedPlatform ? (
-              "We offer comprehensive solutions for the most popular social media platforms"
-            ) : !selectedService ? (
-              `Select a service for your platform ${selectedPlatform}`
-            ) : (
-              `${selectedService} on ${selectedPlatform}, to increase the number of new fans and improve your experience in a short period of time.`
-            )}
-          </p>
-          <div className="flex items-center justify-center mb-8">
-                  <div className="relative flex items-center gap-3 bg-[#2c3718] rounded-full px-6 py-3 mt-10">
-                    <div className="relative">
-                      <div className="w-3 h-3 bg-[#a3fc3b] rounded-full"></div>
-                      <div className="absolute top-0 left-0 w-3 h-3 bg-[#a3fc3b] rounded-full animate-ping"></div>
-                      <div className="absolute top-0 left-0 w-3 h-3 bg-[#a3fc3b] rounded-full animate-pulse"></div>
-                    </div>
-                    <div>
-                      <span className="text-[#a3fc3b] font-semibold">TikTok & YouTube on the top</span>
-                      <span className="text-gray-300 mx-2">•</span>
-                      <span className="text-gray-300">This week it is enjoying </span>
-                      <span className="text-[#a3fc3b] font-semibold">a lot of attention.</span>
+        <div className="relative z-10 max-w-[1200px] mx-auto px-4">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              {!selectedPlatform ? (
+                "Choose your platform"
+              ) : !selectedService ? (
+                <>Selected: <span className="text-[#a3fc3b]">{selectedPlatform}</span></>
+              ) : (
+                <>Selected: <span className="text-[#a3fc3b]">{selectedPlatform} / {selectedService}</span></>
+              )}
+            </h1>
+            <p className="text-gray-300 text-lg max-w-[600px] mx-auto">
+              {!selectedPlatform ? (
+                "We offer comprehensive solutions for the most popular social media platforms"
+              ) : !selectedService ? (
+                `Select a service for your platform ${selectedPlatform}`
+              ) : (
+                `${selectedService} on ${selectedPlatform}, to increase the number of new fans and improve your experience in a short period of time.`
+              )}
+            </p>
+            <div className="flex items-center justify-center mb-8">
+                    <div className="relative flex items-center gap-3 bg-[#2c3718] rounded-full px-6 py-3 mt-10">
+                      <div className="relative">
+                        <div className="w-3 h-3 bg-[#a3fc3b] rounded-full"></div>
+                        <div className="absolute top-0 left-0 w-3 h-3 bg-[#a3fc3b] rounded-full animate-ping"></div>
+                        <div className="absolute top-0 left-0 w-3 h-3 bg-[#a3fc3b] rounded-full animate-pulse"></div>
+                      </div>
+                      <div>
+                        <span className="text-[#a3fc3b] font-semibold">TikTok & YouTube on the top</span>
+                        <span className="text-gray-300 mx-2">•</span>
+                        <span className="text-gray-300">This week it is enjoying </span>
+                        <span className="text-[#a3fc3b] font-semibold">a lot of attention.</span>
+                      </div>
                     </div>
                   </div>
-                </div>
+          </div>
+
+          {!selectedPlatform ? (
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {Object.keys(platformsConfig).map((platform) => {
+                const iconData = platformIcons.find(p => p.name === platform);
+                return (
+                  <button
+                    key={platform}
+                    onClick={() => handlePlatformSelect(platform)}
+                    className={`bg-[#2c3718] hover:bg-[#3a4822] border border-[#B9FD50]/20 rounded-xl p-6 transition-all duration-300 group`}
+                  >
+                    <div className="flex flex-col items-center">
+                      <FontAwesomeIcon
+                        icon={iconData?.icon || faGlobe}
+                        className="text-[#a3fc3b] w-12 h-12 mb-4 group-hover:scale-110 transition-transform"
+                      />
+                      <h3 className="text-white text-lg font-semibold">{platform}</h3>
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          ) : !selectedService ? (
+            <div>
+              <button
+                onClick={() => setSelectedPlatform(null)}
+                className="text-[#a3fc3b] mb-8 hover:text-[#8fe032] transition-colors flex items-center"
+              >
+                ← Return to platforms
+              </button>
+
+              <h2 className="text-3xl font-bold text-white mb-8">
+                {selectedPlatform} - Available services
+              </h2>
+
+              {renderServices()}
+            </div>
+          ) : (
+            renderServiceDetails()
+          )}
         </div>
-
-        {!selectedPlatform ? (
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {Object.keys(platformsConfig).map((platform) => {
-              const iconData = platformIcons.find(p => p.name === platform);
-              return (
-                <button
-                  key={platform}
-                  onClick={() => handlePlatformSelect(platform)}
-                  className={`bg-[#2c3718] hover:bg-[#3a4822] border border-[#B9FD50]/20 rounded-xl p-6 transition-all duration-300 group`}
-                >
-                  <div className="flex flex-col items-center">
-                    <FontAwesomeIcon
-                      icon={iconData?.icon || faGlobe}
-                      className="text-[#a3fc3b] w-12 h-12 mb-4 group-hover:scale-110 transition-transform"
-                    />
-                    <h3 className="text-white text-lg font-semibold">{platform}</h3>
-                  </div>
-                </button>
-              );
-            })}
-          </div>
-        ) : !selectedService ? (
-          <div>
-            <button
-              onClick={() => setSelectedPlatform(null)}
-              className="text-[#a3fc3b] mb-8 hover:text-[#8fe032] transition-colors flex items-center"
-            >
-              ← Return to platforms
-            </button>
-
-            <h2 className="text-3xl font-bold text-white mb-8">
-              {selectedPlatform} - Available services
-            </h2>
-
-            {renderServices()}
-          </div>
-        ) : (
-          renderServiceDetails()
-        )}
-      </div>
-    </section>
+      </section>
+      <HotOffers />
+    </div>
   );
 };
 

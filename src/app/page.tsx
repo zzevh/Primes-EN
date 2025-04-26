@@ -2,6 +2,7 @@ import Hero from '@/components/Hero';
 import HowWeWork from '@/components/HowWeWork';
 import Services from '@/components/Services';
 import Benefits from '@/components/Benefits';
+import { HotOffers } from '@/components/HotOffers';
 import FAQ from '@/components/FAQ';
 
 function Home() {
@@ -11,6 +12,7 @@ function Home() {
       <HowWeWork />
       <Services />
       <Benefits />
+      <HotOffers />
       <FAQ />
     </main>
   );
