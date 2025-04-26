@@ -15,12 +15,12 @@ export default function RootLayout({
 }) {
   useEffect(() => {
     // Zapisz oryginalny tytuł
-    const originalTitle = document.title || "Primes – Agencja Promocji Online | Większy Zasięg, Więcej Klientów";
+    const originalTitle = document.title || "Primes - Online Promotion Agency | More Reach, More Clients";
     
     // Funkcja zmieniająca tytuł gdy użytkownik opuszcza stronę
     const handleVisibilityChange = () => {
       if (document.hidden) {
-        document.title = "Wróć do nas! | Wypromuj się z nami!";
+        document.title = "Come back to us! | Promote yourself with us!";
       } else {
         document.title = originalTitle;
       }
@@ -41,11 +41,11 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#111204" />
-        <meta name="description" content="Zwiększ widoczność swojego profilu dzięki naszej usłudze promocji online. Więcej zasięgów, więcej lajków, większe zaangażowanie – szybki start!" />
-        <meta name="keywords" content="promocja konta social media, zwiększenie zasięgu profilu, agencja social media, pakiety lajków, promowanie filmów online, widoczność social media, szybki start konta" />
+        <meta name="description" content="Increase the visibility of your profile with our online promotion service. More reach, more likes, more engagement - get started fast!" />
+        <meta name="keywords" content="social media account promotion, increase profile reach, social media agency, social media packages, online video promotion, social media visibility, quick account launch" />
         <meta name="robots" content="index, follow" />
         <link rel="icon" href="/favicon.ico" />
-        <title>Primes – Agencja Promocji Online | Większy Zasięg, Więcej Klientów</title>
+        <title>Primes - Online Promotion Agency | More Reach, More Clients</title>
         
         {/* Kod Piksela Facebooka */}
         <script

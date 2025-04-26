@@ -10,9 +10,9 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({
-  title = "Primes – Agencja Promocji Online | Większy Zasięg, Więcej Klientów",
-  description = "Zwiększ widoczność swojego profilu dzięki naszej usłudze promocji online. Więcej zasięgów, więcej lajków, większe zaangażowanie – szybki start!",
-  keywords = "lajki, obserwacje, wyświetlenia,zwiększenie zasięgu profilu,agencja social media,pozycjonowanie, subskrypcje, followers, likes, views, primes",
+  title = "Primes - Online Promotion Agency | More Reach, More Clients",
+  description = "Increase the visibility of your profile with our online promotion service. More reach, more likes, more engagement - get started fast!",
+  keywords = "likes, followers, displays,increase profile reach,social media agency,SEO, subscriptions, followers, likes, views, primes",
   ogImage = "/images/og-image.png",
   ogUrl = "https://primes.cc",
 }) => {
@@ -44,11 +44,12 @@ const SEO: React.FC<SEOProps> = ({
       
       {/* Dodatkowe meta tagi dla lepszego SEO */}
       <meta name="author" content="Primes" />
-      <meta name="geo.region" content="PL" />
-      <meta name="geo.placename" content="Polska" />
-      <meta name="language" content="pl-PL" />
-      <meta name="revisit-after" content="7 days" />
-      <meta name="rating" content="general" />
+<meta name="geo.region" content="US" />
+<meta name="geo.placename" content="United States" />
+<meta name="language" content="en-US" />
+<meta name="revisit-after" content="7 days" />
+<meta name="rating" content="general" />
+
       
       {/* Schema.org markup dla wyszukiwarek */}
       <script type="application/ld+json">
